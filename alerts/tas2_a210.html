@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<title>TAS2_a210_outOfRangeCalibration</title>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/dist/output.css" />
+  </head>
+  <body class="bg-slate-50 dark:bg-slate-800 text-slate-900 dark:text-white">
+	<b>TAS2_a210_outOfRangeCalibration</b>
+	<br>
+	This alert indicates that the ride height sensor positions are in an unexpected range compared to a known default value, which is determined in firmware. It is meant to catch gross miscalibrations. This alert and yellow warning lamp indicate that the calibration on at least one corner is between 25 and 50mm away from the default.<br><ul><li>If (during ride height calibration) the operator enters a height measurement that results in an offset that is 25-50mm  from the default offset, the calibration will be accepted but will cause the aforementioned alert to be set, with a yellow warning lamp. Operation will not be restricted.</li><li>If the operator enters a height measurement that results in an offset that is more than +/-50mm from the default offset, the Unified Diagnostic Services (UDS) routine will fail and nothing will change. No alert will appear and no calibration information will be saved.</li></ul>Each vehicle will have the ride height sensor in a slightly different position due to tolerance stackup. This is why Tesla Air Suspension (TAS) allows for a +/-25mm window before setting the alert.<b><br></b>
+	<br>
+	
+	</body>
+</html>

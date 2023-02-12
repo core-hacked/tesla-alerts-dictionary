@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<title>ESP_d059_aysPlaus</title>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/dist/output.css" />
+  </head>
+  <body class="bg-slate-50 dark:bg-slate-800 text-slate-900 dark:text-white">
+	<b>ESP_d059_aysPlaus</b>
+	<br>
+	Lateral Acceleration Sensor: Plausibility against second signal failed. Ays plausibility fault.<br><br>The monitoring checks for a physically plausible lateral acceleration signal and consists of the following parts:<br><ul><li>Monitoring during validity by building a reference lateral acceleration from all available sensor signals.</li><li>Steering angle.</li><li>Yaw rate.</li><li>Lateral acceleration.</li><li>Wheel speed sensors.</li></ul><div><br></div>It is possible to test the lateral acceleration (Ay) signal on plausibility. If during stable vehicle behavior a lateral acceleration failure larger than approximately 2.5m/s� occurs, the vehicle dynamic controller will disregard the sensor information so a false vehicle dynamic intervention is prevented. A fault is recognized after 1.6s during model validity.<div><br>When observing, the recognition time depends on the amount of failure. The deviation of the measured signal from the model values is integrated when exceeding the allowed threshold. The shutdown threshold for the fault integral is 10m/s.</div>
+	<br>
+	
+	</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<title>UI_a037_AudioWatchdogXrunStormError</title>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/dist/output.css" />
+  </head>
+  <body class="bg-slate-50 dark:bg-slate-800 text-slate-900 dark:text-white">
+	<b>UI_a037_AudioWatchdogXrunStormError</b>
+	<br>
+	High rate of XRUN messages detected in the kernel logs. Audio stack will reset if this occured within 1minute from waking (not booting) and if the vehicle is parked. XRUN events correspond overrun/underrun of the buffer and can happen when a device/stream is closed or interrupted (ie. hanging a phone call) or high system load. An occasional XRUN is not necessarly an issue, but a high rate (40+ in 1sec) will have customer-facing impact<br>Audio XRUN storm. The watchdog found at least 40 lines like `XRUN: pcmC0D**:0` between two `gpmrb_machine: XRUN marker` lines which are written every second<br>Audio stack will reboot. This alert may be a symptom of a frozen MCU and potential VOR<br>eMMC Status Register has error bits set<br>Periodic eMMC check or post-wake eMMC status has an error bit set<br>
+	<br>
+	
+	</body>
+</html>

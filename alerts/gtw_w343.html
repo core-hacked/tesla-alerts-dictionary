@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<title>GTW_w343_frunkLatchFailure</title>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/dist/output.css" />
+  </head>
+  <body class="bg-slate-50 dark:bg-slate-800 text-slate-900 dark:text-white">
+	<b>GTW_w343_frunkLatchFailure</b>
+	<br>
+	<span style="line-height: 17.1428px;">This alert will appear if the status of the front trunk switch goes into an ambiguous state.&nbsp;</span>Ambiguous state for the switch means the body controller (BCM - Model S and BCFRONT - Model X) sent a valid command to the front trunk latch but did not detected that the front trunk latch switch transitioned to OPEN state. A valid command means all preconditions were OK, and the module applied power to the latch.<div><span style="line-height: 17.1428px;"><br>??If this alert is present,&nbsp;</span><span style="line-height: 17.1428px;">Cruise Control will be disabled on Drivers Assistance System (DAS) vehicles (</span><a href="https://toolbox.teslamotors.com/articles/20365">article 20365</a>).</div><div><span style="line-height: 17.1428px;"><br></span></div><div>The alert will clear itself after a successful release cycle: if the primary latch switch transits from CLOSED to OPEN state within 200ms following a release request.</div>
+	<br>
+	
+	</body>
+</html>

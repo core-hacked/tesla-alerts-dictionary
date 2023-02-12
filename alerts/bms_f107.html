@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<title>BMS_f107_SW_Cell_Voltage_Sensor</title>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/dist/output.css" />
+  </head>
+  <body class="bg-slate-50 dark:bg-slate-800 text-slate-900 dark:text-white">
+	<b>BMS_f107_SW_Cell_Voltage_Sensor</b>
+	<br>
+	<div class="document"><p style="font-size: 12px; color: rgb(17, 17, 17); font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 17.1428394317627px;">A high voltage (HV) battery cell voltage sensor error is detected.&nbsp;<span style="font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;">There are three reasons for this alert to be reported by the&nbsp;</span><span style="color: rgb(52, 52, 52);">Battery Management System (</span><span style="font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;">BMS):</span></p><p style="font-size: 12px; color: rgb(17, 17, 17); font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 17.1428394317627px;"><ol><li><span style="font-size: 1em; line-height: 1.42857;">BMS_a107_errorType = BMS_A107_MODULEBRICK_MISMATCH</span></li><ul><li>This alerts means that the voltage of the module differs by more than 35mV from the sum of the brick voltages of that module.</li></ul><li><span style="font-size: 1em; line-height: 1.42857;">BMS_a107_errorType = BMS_A107_TVSH_BLEEDV_LOW</span></li><ul><li>This alert type means that the bleed resistor is turned on for that brick, but the voltage is too low (likely due to a stuck bleed resistor).</li></ul><li>BMS_a107_errorType = BMS_A107_TVSH_IMP_HIGH </li><ul><li>This alert type is the most common. The system has detected a high impedance on the sensor harness from the Battery Monitoring Board (BMB) to the bricks / module. It means that the measurements from that BMB cannot be trusted.</li></ul></ol></p></div>
+	<br>
+	
+	</body>
+</html>

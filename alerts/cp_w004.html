@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<title>CP_w004_proximityRationality</title>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/dist/output.css" />
+  </head>
+  <body class="bg-slate-50 dark:bg-slate-800 text-slate-900 dark:text-white">
+	<b>CP_w004_proximityRationality</b>
+	<br>
+	This alert is currently used for GB (Guobiao standard - Chinese) charge ports on Model S / X vehicles and PLCRLY electronic control units (ECU) in EU Model S / X vehicles.<div><br></div><div>The alert means the proximity voltage is outside of expected range. These are the expected ranges on vehicles with a GB charge port, the AC portion of the charge port, and the IEC type 2 charge ports:<div><ul><li>4.291V to 4.620V - No cable in the GB AC charge port.<br></li><li>4.280V to 4.291V - GB cable in the GB AC charge port, and the button is being held down, meaning the connector is unlatched.</li><li>3.525V to 3.892V - 10A GB cable in the GB AC charge port.<br></li><li>2.995V to 3.275V - 16A GB cable in the GB AC charge port.</li><li>1.740V to 2.035V - 32A GB cable in the GB AC charge port.</li><li>1.020V to 1.220V - 63A GB cable in the GB AC charge port.</li></ul></div></div><div><br></div>These are the limits for the DC portion of the GB charge port:<br><ul><li>For pin CC2:<br><ul><li>4.5V to 5.5V - No cable in the GB DC charge port.</li><li>2.0V to 3.0V - Cable connected to the GB DC charge port.</li></ul></li><li>For pin CC1:<ul><li>0.0V to 0.5V - No cable in the GB DC charge port.</li><li>5.5V to 6.5V - Cable connected to the GB DC charge port.</li><li>3.5V to 4.5V - Cable latched to the GB DC charge port.</li></ul></li></ul><br>Any voltage <b>outside any </b>of these voltage regions will cause a proximityRationality alert and prevent charging.
+	<br>
+	
+	</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<title>CP_w029_doorClosedProxPilot</title>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/dist/output.css" />
+  </head>
+  <body class="bg-slate-50 dark:bg-slate-800 text-slate-900 dark:text-white">
+	<b>CP_w029_doorClosedProxPilot</b>
+	<br>
+	This particular fault is quite heavily debounced in the Charge Port (CP). It only sets when the following conditions have been met for over 3 seconds:<ul><li>Door sensed as closed.<br></li><li>Valid pilot (LINE_CHARGE, FAST_CHARGE, or FAULTED) or proximity (LATCHED or UNLATCHED) is present.<br></li></ul><br>If there is an issue with the door sensor that indicates the position as closed when it is opened, this alert may be triggered. Also, the alert can be triggered if the pilot or proximity state reported by the VI was stale / delayed.
+	<br>
+	
+	</body>
+</html>

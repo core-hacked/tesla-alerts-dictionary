@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<title>TAS2_a030_PWMerrorFL</title>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/dist/output.css" />
+  </head>
+  <body class="bg-slate-50 dark:bg-slate-800 text-slate-900 dark:text-white">
+	<b>TAS2_a030_PWMerrorFL</b>
+	<br>
+	The alert checks for height sensor PWM faults every 10ms. <br><br>A weighted counter increments by 10 for every <i>repeated</i> fault and triggers the fault at a threshold of 50.
+ The weighted counter decrements by 1 for every valid reading and clears the fault when it reaches 0.<br><br>TAS2_a030_PWMerrorFL will trigger if any of the following faults are set:<br><br><b>PWM_OVER_MAX_DUTY</b><br><ul><li>Set:The height sensor PWM signal has had a duty cycle <u>greater than 87.5%</u> for 50ms.</li><li>Clear:The height sensor PWM signal has had a duty cycle <u>less than 87.5%</u> for 500ms.</li></ul><br><b>PWM_UNDER_MIN_DUTY
+</b><br><ul><li>Set:
+The height sensor PWM signal has had a duty cycle <u>less than 12.5%</u> for 50ms.</li><li>Clear:The height sensor PWM signal has had a duty cycle <u>greater than 12.5%</u> for 500ms.</li></ul><br><b>PWM_OVER_MAX_PERIOD&nbsp;</b><div><ul><li>Set:
+The height sensor PWM signal has had a period <u>greater than 0.00131579 seconds</u> for 50ms.</li><li>Clear:The height sensor PWM signal has had a period <u>less than 0.00131579 seconds</u> for 500ms.</li></ul><br><b>PWM_UNDER_MIN_PERIOD</b>
+<br><ul><li>Set:
+The height sensor PWM signal has had a period <u>less than 0.00119048 seconds</u> for 50ms.</li><li>Clear:The height sensor PWM signal has had a period <u>greater than 0.00119048 seconds</u> for 500ms.</li></ul><br><b>PWM_OVER_MAX_DELTA_DUTY
+ </b>(cannot be set if transitioning to/from 0 or 100% duty cycle)<b></b><br><ul><li>Set:
+The height sensor PWM duty cycle has changed by <u>more than 33%</u> (3.3 * 10ms alert period) since its previous cycle for 50ms.</li><li>Clear:
+The height sensor PWM duty cycle has changed by <u>less than 33%</u> (3.3 * 10ms alert period) since its previous cycle for 500ms.</li></ul></div>
+	<br>
+	
+	</body>
+</html>

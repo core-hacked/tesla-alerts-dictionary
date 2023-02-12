@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json.schemastore.org/web-manifest-combined.json",
+  "name": "Tesla Alerts Dictionary",
+  "short_name": "Tesla Alerts Dictionary",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#fff",
+  "description": "Tesla Alerts Dictionary. Tesla alert codes and their meaning.",
+  "icons": [
+    {
+      "src": "/dist/images/logo.svg",
+      "sizes": "512x512",
+      "type": "image/svg"
+    }
+  ]
+}

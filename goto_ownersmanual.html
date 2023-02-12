@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1"
+    />
+    <title>Tesla Alerts Dictionary</title>
+    <link rel="stylesheet" href="/dist/output.css" />
+    <script defer src="/dist/flowbite.min.js"></script>
+  </head>
+  <body class="dark:bg-slate-900 bg-slate-50 text-white">
+    <header-section>
+      <nav
+        class="bg-white border-slate-200 px-2 sm:px-4 py-2.5 rounded dark:bg-[#0d1425]"
+      >
+        <div
+          class="container flex flex-wrap items-center justify-between mx-auto"
+        >
+          <a href="/" class="flex items-center">
+            <img
+              src="/dist/images/logo.svg"
+              class="h-6 mr-3 sm:h-9"
+              alt="Tesla Alerts Dictionary Logo"
+            />
+            <span
+              class="self-center text-xl font-semibold whitespace-nowrap text-black dark:text-white"
+              >Tesla Alerts Dictionary</span
+            >
+          </a>
+          <div class="flex md:order-2">
+            <div class="relative hidden md:block">
+              <div
+                class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none"
+              >
+                <svg
+                  class="w-5 h-5 text-slate-500"
+                  aria-hidden="true"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                <span class="sr-only">Search icon</span>
+              </div>
+              <input
+                type="text"
+                aria-labelledby="desktop-search-label"
+                id="search-navbar"
+                enterkeyhint="search"
+                class="block w-full p-2 pl-10 text-sm text-slate-900 border border-slate-300 rounded-lg bg-slate-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-slate-800 dark:border-slate-700 dark:placeholder-slate-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder="Search..."
+              />
+            </div>
+            <button
+              data-collapse-toggle="navbar-search"
+              type="button"
+              class="inline-flex items-center p-2 text-sm text-slate-500 rounded-lg md:hidden hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-slate-200 dark:text-slate-400 dark:hover:bg-slate-700 dark:focus:ring-slate-600"
+              aria-controls="navbar-search"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Open menu</span>
+              <svg
+                class="w-6 h-6"
+                aria-hidden="true"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div
+            class="items-center justify-between w-full md:flex md:w-auto md:order-1"
+          >
+            <div class="relative mt-3 md:hidden">
+              <div
+                class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none"
+              >
+                <svg
+                  class="w-5 h-5 text-slate-500"
+                  aria-hidden="true"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </div>
+              <input
+                type="text"
+                aria-labelledby="mobile-search-label"
+                id="search-navbar-mobile"
+                enterkeyhint="search"
+                class="block w-full p-2 pl-10 text-sm text-slate-900 border border-slate-300 rounded-lg bg-slate-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-slate-700 dark:border-slate-600 dark:placeholder-slate-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder="Search..."
+              />
+            </div>
+            <ul
+              id="navbar-search"
+              class="hidden flex-col p-4 mt-4 border border-slate-100 rounded-lg bg-slate-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-slate-800 md:dark:bg-[#0d1425] dark:border-slate-700 md:flex"
+            >
+              <li>
+                <a
+                  href="/"
+                  class="flex py-2 pl-3 pr-4 text-slate-700 rounded hover:bg-slate-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-slate-400 dark:hover:bg-slate-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-slate-700"
+                  aria-current="page"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M9.401 3.003c1.155-2 4.043-2 5.197 0l7.355 12.748c1.154 2-.29 4.5-2.599 4.5H4.645c-2.309 0-3.752-2.5-2.598-4.5L9.4 3.003zM12 8.25a.75.75 0 01.75.75v3.75a.75.75 0 01-1.5 0V9a.75.75 0 01.75-.75zm0 8.25a.75.75 0 100-1.5.75.75 0 000 1.5z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  <span class="inline md:hidden pl-4">Alerts</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/core-hacked/tesla-alerts-dictionary/pulls"
+                  class="flex py-2 pl-3 pr-4 text-slate-700 rounded hover:bg-slate-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-slate-400 dark:hover:bg-slate-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-slate-700"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 9a.75.75 0 00-1.5 0v2.25H9a.75.75 0 000 1.5h2.25V15a.75.75 0 001.5 0v-2.25H15a.75.75 0 000-1.5h-2.25V9z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  <span class="inline md:hidden pl-4">Contribute</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/core-hacked/tesla-alerts-dictionary"
+                  class="flex py-2 pl-3 pr-4 text-slate-700 rounded hover:bg-slate-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-slate-400 md:dark:hover:text-white dark:hover:bg-slate-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-slate-700"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                    />
+                  </svg>
+                  <span class="inline md:hidden pl-4">GitHub</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header-section>
+    <troubleshooting
+      class="flex flex-row gap-2 p-2 flex-wrap items-center justify-center"
+    >
+      <section
+        class="flex flex-row gap-2 p-2 flex-wrap items-center justify-center max-w-[1425px]"
+      >
+        <a
+          class="alerts_btn"
+          href="https://www.tesla.com/ownersmanual/models/en_us/GUID-9A3F0F72-71F4-433D-B68B-0A472A9359DF.html"
+        >
+          Troubleshooting Alerts | Model S
+          <img
+            style="display: block; text-align: center; width: 300px"
+            src="/dist/images/models_palladium.png"
+          />
+        </a>
+        <a
+          class="alerts_btn"
+          href="https://www.tesla.com/ownersmanual/model3/en_us/GUID-9A3F0F72-71F4-433D-B68B-0A472A9359DF.html"
+        >
+          Troubleshooting Alerts | Model 3
+          <img
+            style="display: block; text-align: center; width: 300px"
+            src="/dist/images/model3.png"
+        /></a>
+        <a
+          class="alerts_btn"
+          href="https://www.tesla.com/ownersmanual/modelx/en_us/GUID-9A3F0F72-71F4-433D-B68B-0A472A9359DF.html"
+        >
+          Troubleshooting Alerts | Model X
+          <img
+            style="display: block; text-align: center; width: 300px"
+            src="/dist/images/modelx_palladium.png"
+        /></a>
+        <a
+          class="alerts_btn"
+          href="https://www.tesla.com/ownersmanual/modely/en_us/GUID-9A3F0F72-71F4-433D-B68B-0A472A9359DF.html"
+        >
+          Troubleshooting Alerts | Model Y
+          <img
+            style="display: block; text-align: center; width: 300px"
+            src="/dist/images/modely.png"
+        /></a>
+        <a
+          class="alerts_btn"
+          href="https://www.tesla.com/ownersmanual/2015_2020_modelx/en_us/GUID-9A3F0F72-71F4-433D-B68B-0A472A9359DF.html"
+        >
+          Troubleshooting Alerts | Model S 2012-2020
+          <img
+            style="display: block; text-align: center; width: 300px"
+            src="/dist/images/models.png"
+        /></a>
+        <a
+          class="alerts_btn"
+          href="https://www.tesla.com/ownersmanual/2012_2020_models/en_us/GUID-9A3F0F72-71F4-433D-B68B-0A472A9359DF.html"
+        >
+          Troubleshooting Alerts | Model X 2015-2020
+          <img
+            style="display: block; text-align: center; width: 300px"
+            src="/dist/images/modelx.png"
+        /></a>
+      </section>
+    </troubleshooting>
+    <script defer>
+      // different from main js file, because of how the search bar is implemented
+      const search_bar = document.getElementById("search-navbar");
+      const search_bar_mobile = document.getElementById("search-navbar-mobile");
+
+      // event listener for search-navbar if the enter key or search key on ios is pressed
+      search_bar.addEventListener("keyup", function (e) {
+        if (e.key === "Enter" || e.key === "Search") {
+          window.location.href = `/?search=${search_bar.value}`;
+        }
+      });
+
+      // event listener for search-navbar-mobile if the enter key or search key on ios is pressed
+      search_bar_mobile.addEventListener("keyup", function (e) {
+        if (e.key === "Enter" || e.key === "Search") {
+          window.location.href = `/?search=${search_bar.value}`;
+        }
+      });
+    </script>
+  </body>
+</html>

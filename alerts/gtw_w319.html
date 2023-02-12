@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<title>GTW_w319_contactorImpedance</title>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/dist/output.css" />
+  </head>
+  <body class="bg-slate-50 dark:bg-slate-800 text-slate-900 dark:text-white">
+	<b>GTW_w319_contactorImpedance</b>
+	<br>
+	The battery management system (BMS) constantly measures or calculates the resistance across the pack contactors by looking at the voltage difference when the current is stable between the battery side and vehicle side of the power switches.&nbsp;<br><br><div>The current is always fluctuating at the 
+
+power switches, meaning the measurement is never perfect, and the BMS associates a confidence index to each measurement. The more stable the current and the longer it is stable, the higher the confidence index will be.&nbsp;?<br><br><div>The Gateway will report this alert and start a log upload when:<br><ul><li>The confidence index is on the lower side (but still acceptable) and the power switch (either positive or negative) resistance measurement is above 1.5mohms.<br></li><li>The confidence index is good (more confidence in the measurement) and the power switch (either positive or negative) resistance measurement is above 1.0mohms.<br></li></ul><div><br></div>In parallel, the BMS also calculates the contactors stress, which directly relates to the contactors impedance. There cannot be stress without impedance.</div></div>
+	<br>
+	
+	</body>
+</html>

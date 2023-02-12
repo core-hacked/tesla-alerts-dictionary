@@ -1,0 +1,7 @@
+alerts/
+*.min*
+dist/
+!goto_ownersmanual.html
+misc/
+index.html
+!src/index.html

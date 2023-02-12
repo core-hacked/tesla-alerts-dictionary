@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<title>DI_a223_tractionControlDisabled</title>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/dist/output.css" />
+  </head>
+  <body class="bg-slate-50 dark:bg-slate-800 text-slate-900 dark:text-white">
+	<b>DI_a223_tractionControlDisabled</b>
+	<br>
+	Drive Inverter Warning: Traction control (TC) is disabled<br>This alert sets any time traction control is not available. This is almost always due to the system being faulted. To diagnose the cause of the fault, check this alert's payload to identify which inputs are in a degraded state. <br>Steps to find cause:<br>1) If velocityEstimatorState is degraded, check other DI alert for velocityEstimatorState to find the root cause. If velocityEstimatorState is normal: <br>2) If btcTargetState or ptcTargetState are degraded, check for CAN bus issues (these signals come from ESP) or sensor issues with ESP (check associated ESP alerts). If target states are normal: <br>3) If addState is degraded, check for other DI alerts about ADD. If slaveADDState is degraded, check for DIS alerts about ADD and check for other DI alerts indicating CAN communication issues with DIS.<br>This alert will clear on the drive cycle after traction control is re-enabled or un-faulted.<br>Traction control is not available. The vehicle should be driven with extreme caution.<br>Drive Inverter Warning: VCFRONT (Front Vehicle Controller) node is MIA on CAN for one or multiple messages<br>Drive Inverter Warning: EPB did not apply in standstill state<br>Drive Inverter User Alert: Rear Motor Mode selected by user<br>Drive Inverter Warning: EPAS (Steering Assist) node is MIA on CAN for one or multiple messages<br>Drive Inverter Warning: iBooster (Brake Assist) node is MIA on CAN for one or multiple messages<br>Drive Inverter User Alert: Brake stand active<br>Drive Inverter Warning: Stability control (VDC) is disabled<br>This alert sets any time stability control is not available. This is almost always due to the system being faulted. To diagnose the cause of the fault, check DI alerts set immediately prior to this alert. Also ensure the vehicle is on consistent software with no software version mismatch alerts.<br>This alert will clear on the drive cycle after stability control is re-enabled or un-faulted.<br>Drive Inverter User Alert: Vehicle Hold release required<br>Drive Inverter Warning: Wheel slip signal error<br>VCFRONT_driverIsLeaving == TRUE && Gear != P<br>VCFRONT_driverIsLeaving == FALSE<br>Drive Inverter Warning: Rear wheel speed signal error<br>Drive Inverter Warning: Accel 5V Supply out of bounds<br>Drive Inverter Warning: Brake pedal sensor bad<br>Drive Inverter Warning: Longitudinal acceleration or roll rate error<br>Drive Inverter Warning: High thread execution time<br>Drive Inverter Warning: Report of Driver Brake Apply for false-detection diagnostic<br>Drive Inverter User Alert: Cannot shift gears - Vehicle speed is too high<br>User attempts to shift above allowed speed limit<br>User cannot shift gears while speed is too high<br>Drive Inverter Warning: Suspected implausible input signal, close to faulting<br>
+	<br>
+	
+	</body>
+</html>

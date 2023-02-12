@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<title>EPAS_d027_KFC_FOR_TIMO</title>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/dist/output.css" />
+  </head>
+  <body class="bg-slate-50 dark:bg-slate-800 text-slate-900 dark:text-white">
+	<b>EPAS_d027_KFC_FOR_TIMO</b>
+	<br>
+	Motor Driver Runtime Error: Calculation for new Pulse Width Modulation (PWM) commands has timed out.<br><br>FOR has missed the time at which the PWM values for the next 500?s cycle must be calculated. The output of the PWM is cyclical, meaning one cycle is divided into several sections. After about 75% of the cycle time, the FOR needs the PWM values for the next cycle to be calculated. After the completion of processing the measured values started by the FOR, it must compute the new PWM values in approximately 20% of the cycle time. If the FOR takes longer than the beginning of the new cycle, the Error Handler reports an error and then recalculation begins.
+	<br>
+	
+	</body>
+</html>

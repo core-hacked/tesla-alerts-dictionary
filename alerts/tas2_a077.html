@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<title>TAS2_a077_pressureSigVTooLow</title>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/dist/output.css" />
+  </head>
+  <body class="bg-slate-50 dark:bg-slate-800 text-slate-900 dark:text-white">
+	<b>TAS2_a077_pressureSigVTooLow</b>
+	<br>
+	The Tesla Air Suspension Controller (TAS) supplies the system pressure sensor (located in the valve block) with 5V, and observes the analog pressure signal voltage to evaluate the pressure. In normal operation of the pressure sensor, the signal should range from approximately 10-90% of the supply voltage. 
+<br><br><b>Set:
+</b><br>The gallery pressure sensor signal is below 4% the supply voltage (nominally 5V).
+<br>voltage &lt; 0.2 V
+<br><br><b>Clear:
+</b><br>The gallery pressure sensor signal is above 4% the supply voltage (nominally 5V).
+<br>voltage &gt; 0.2 V
+<br><br>To convert from percent to bar:         <i>p(bar)</i> = 23.7248 * <i>p(percent)</i> - 1.375
+<br>
+	<br>
+	
+	</body>
+</html>

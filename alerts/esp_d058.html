@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<title>ESP_d058_aysOffset</title>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/dist/output.css" />
+  </head>
+  <body class="bg-slate-50 dark:bg-slate-800 text-slate-900 dark:text-white">
+	<b>ESP_d058_aysOffset</b>
+	<br>
+	Lateral Acceleration Sensor: Adjustment is not possible, and the offset is too large.<br><div><br></div><div>There is an Ays failure due to a lateral acceleration offset or mounting position that is out of limit.</div><div><br></div><div>During normal driving, a symmetrical driving situation is assumed. In this case, the mean driving direction is straight ahead and the long time filtered lateral acceleration value is equivalent to the offset. The long time filter is a low pass filter that after 30 km, 95% of the initial offset is compensated. The offset is initialized with the Electrically Erasable Programmable Read-Only Memory (EEPROM) value (offset of the last ignition cycle). The read value is limited to 2 m/s�. A failure is set immediately when offset AysOffset exceeds the limit P_ayInOfsFineErr (default value: 2.25 m/s�).</div><div><br></div>In addition, there is a check for a sudden change in the signal offset due to, for example, a misalignment of the HU after an accident. It compares the stored offset versus the new offset after a learning distance of 10 km. The allowed misalignment is 10deg (equals a 1.73 m/s� offset difference).
+	<br>
+	
+	</body>
+</html>

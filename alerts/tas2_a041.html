@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<title>TAS2_a041_PWMopenRR</title>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/dist/output.css" />
+  </head>
+  <body class="bg-slate-50 dark:bg-slate-800 text-slate-900 dark:text-white">
+	<b>TAS2_a041_PWMopenRR</b>
+	<br>
+	The alert checks for height sensor PWM faults every 10ms. A weighted counter increments by 10 for every faulted reading and triggers the fault at a threshold of 50.
+<br><br><b>Set:
+</b><br>The rear right (RR) height sensor PWM signal has had a duty cycle <u>equal to 100%</u> for 50ms.
+<br>A weighted counter increments by 10 for every FAULT_TYPE_PWM_OPEN_CIRCUIT and triggers the fault at a threshold of 50.<br><b><br></b><div><b>Clear:
+</b><br>The rear right (RR) height sensor PWM signal has had a duty cycle <u>less than 100%</u> for 500ms.
+<br>A weighted counter decrements (from threshold of 50) by 1 for every valid reading and clears the fault when it reaches 0.</div>
+	<br>
+	
+	</body>
+</html>

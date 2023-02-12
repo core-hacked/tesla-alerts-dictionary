@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<title>ESP_a139_steeringAngleWrongSign</title>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/dist/output.css" />
+  </head>
+  <body class="bg-slate-50 dark:bg-slate-800 text-slate-900 dark:text-white">
+	<b>ESP_a139_steeringAngleWrongSign</b>
+	<br>
+	This monitoring detects a wrong sign of steering angle signal. The yaw rate calculated from steering angle and the yaw rate calculated from the wheel speed sensors are compared. If the measured yaw rate fits to the model yaw rate positive integrals (IVzLwVA and IVzLwHA) are calculated but if the negative values fits the integrals will become negative. A fault is determined if the integral value is negative and forward driving is recognized. This fault will cause a release test in the following ignition cycle to assure that the sensor is build in correctly. This fault can also be caused by swapped WSS lines at one axle. It requires a release check in the following ignition cycle to prevent system release when the fault is still present. The conditions for release is positive integrals (IVzLwVA and IVzLwHA) > +180 deg.<br>UI_odo message integrity check failed<br>ESP is providing hydraulic boost due to power brakes failure<br>ESP has lost communication with the iBooster, or iBooster has lost the ability to support brake boost<br>Check iBooster status and traffic on the PARTY and CHASSIS bus<br>Brake boost functionality degraded<br>Yawrate signal received from RCM exceeds message latency specification<br>
+	<br>
+	
+	</body>
+</html>

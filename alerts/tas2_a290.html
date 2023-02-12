@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<title>TAS2_a290_twistSustainedAtSpeed</title>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/dist/output.css" />
+  </head>
+  <body class="bg-slate-50 dark:bg-slate-800 text-slate-900 dark:text-white">
+	<b>TAS2_a290_twistSustainedAtSpeed</b>
+	<br>
+	This alert checks for twistSustainedAtSpeed faults every 100ms. Twist indicates that two diagonal corners are higher than the other two and the chassis is reporting a twisted state - as if one wheel was parked on a large block. At speed, twist should not be observed because no road surface can hold the vehicle in a twisted state while in motion.<div><br></div><div>Twist is calculated using the four corner heights: front right (FR), front left (FL), rear right (RR), and rear left (RL).<br><i>Twist = </i>| (FL+RR)-(FR+RL) |<br><b><br></b></div><div><b>Set:&nbsp;</b>When vehicle speed is greater 10mph AND twist is greater than 20mm for 10 seconds.<br><b>Clear:&nbsp;</b>When vehicle speed is less than 10mph OR twist is less than 20mm.</div>
+	<br>
+	
+	</body>
+</html>
