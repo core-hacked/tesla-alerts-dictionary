@@ -8,9 +8,29 @@
   "description": "Tesla Alerts Dictionary. Tesla alert codes and their meaning.",
   "icons": [
     {
-      "src": "/dist/images/logo.svg",
+      "src": "./dist/images/logo.svg",
       "sizes": "512x512",
       "type": "image/svg"
+    },
+    {
+      "src": "./dist/images/apple-touch-120x120.png",
+      "sizes": "120x120",
+      "type": "image/png"
+    },
+    {
+      "src": "./dist/images/apple-touch-152x152.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    },
+    {
+      "src": "./dist/images/apple-touch-167x167.png",
+      "sizes": "167x167",
+      "type": "image/png"
+    },
+    {
+      "src": "./dist/images/apple-touch-180x180.png",
+      "sizes": "180x180",
+      "type": "image/png"
     }
   ]
 }
