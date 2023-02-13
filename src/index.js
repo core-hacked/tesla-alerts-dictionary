@@ -10,13 +10,13 @@ const alert_showInFullscreen = document.getElementById(
 );
 
 function show_alert_menu(alert) {
-  // change alert_iframe src to the alert's url; /alerts/{alert}.html
-  alert_iframe.src = `/alerts/${alert}.html`;
+  // change alert_iframe src to the alert's url; ./alerts/{alert}.html
+  alert_iframe.src = `./alerts/${alert}.html`;
   alert_showInNewTab.onclick = () => {
-    window.open(`/alerts/${alert}.html`, "_blank");
+    window.open(`./alerts/${alert}.html`, "_blank");
   };
   alert_showInFullscreen.onclick = () => {
-    window.location.href = `/alerts/${alert}.html`;
+    window.location.href = `./alerts/${alert}.html`;
   };
 }
 
