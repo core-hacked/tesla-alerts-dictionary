@@ -182,6 +182,6 @@ Distributed under the GNU GPL v3 License. See `LICENSE` for more information.
 [issues-shield]: https://img.shields.io/github/issues/core-hacked/tesla-alerts-dictionary.svg?colorA=1e1e28&colorB=B1E3AD&style=for-the-badge&logo=starship%20style=for-the-badge
 [issues-url]: https://github.com/core-hacked/tesla-alerts-dictionary/issues
 [license-shield]: https://img.shields.io/github/license/core-hacked/tesla-alerts-dictionary.svg?colorA=1e1e28&colorB=F9C096&style=for-the-badge&logo=starship%20style=for-the-badge
-[license-url]: https://github.com/core-hacked/tesla-alerts-dictionary/blob/master/LICENSE.txt
+[license-url]: https://github.com/core-hacked/tesla-alerts-dictionary/blob/master/LICENSE
 [website-shield]: https://img.shields.io/badge/Website-View%20Deployment-blue?colorA=1e1e28&colorB=A4B9EF&style=for-the-badge&logo=starship%20style=for-the-badge
 [website-url]: https://tesla-alerts-dictionary.corehacked.codes
