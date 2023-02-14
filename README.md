@@ -138,6 +138,7 @@ See the [open issues](https://github.com/core-hacked/tesla-alerts-dictionary/iss
 
 - [ ] Document alerts, fix typos, and add more infomation.
 - [ ] Fix the header/button overlap when a successful search is made.
+- [ ] Fix not being able to return to home on fullscreen/new-tab alerts when using as PWA
 - [ ] Possibly add a button to copy the alert code to the clipboard.
 - [ ] Make the buttons in the alert popup more mobile friendly/less cramped.
 - [ ] Autofocus/search when <kbd>CTRL</kbd> + <kbd>F</kbd> is pressed.
